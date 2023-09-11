@@ -9,17 +9,36 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
+  const [numPages, setNumPages] = useState(null);
 
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
 
+  const onDocumentLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages);
+  };
+
+  const renderPages = () => {
+    const pages = [];
+    for (let pageNumber = 1; pageNumber <= numPages; pageNumber++) {
+      pages.push(
+        <Page
+          key={pageNumber}
+          pageNumber={pageNumber}
+          scale={width > 786 ? 1.7 : 0.6}
+        />
+      );
+    }
+    return pages;
+  };
+
   return (
     <div>
       <Container fluid className="resume-section">
         <Row className="resume">
-          <Document file={pdf}>
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+          <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
+            {renderPages()}
           </Document>
         </Row>
 
