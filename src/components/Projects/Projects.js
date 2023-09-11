@@ -21,7 +21,8 @@ function Projects() {
                 isBlog={false}
                 title={project.name}
                 description={project.description}
-                link={project.url}
+                link={project.url}                
+                githubLink={project.githubLink}
               />
             </Col>
           ))}
