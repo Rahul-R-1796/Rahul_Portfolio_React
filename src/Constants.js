@@ -1,4 +1,4 @@
-import Bikebooking from "./Assets/Projects/Bikebooking.png";
+import Bikebooking from "./Assets/Projects/Bikebooking.PNG";
 
 
 export const PROJECTS = [
