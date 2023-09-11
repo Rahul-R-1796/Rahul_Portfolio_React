@@ -7,7 +7,7 @@ export const PROJECTS = [
     name: "Bike Service Booking System",
     technologyUsed: "MERN (MongoDB, Express.js, React, Node.js), JavaScript",
     description: "A user-friendly MERN stack application for hassle-free bike service bookings. Features real-time updates, secure authentication, and payment integration. Streamlining bike maintenance for users.",
-    url: "https://cosmos.azure.com/",
+    url: "https://64bff69778b4c600867df6dd--snazzy-alpaca-58be59.netlify.app/",
     githubLink:"https://github.com/Rahul-R-1796/Bike_Service_App/"
   },
 
