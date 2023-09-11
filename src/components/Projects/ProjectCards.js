@@ -18,7 +18,7 @@ function ProjectCards(props) {
           <BiLinkExternal /> &nbsp;
           {props.isBlog ? "View Blog" : "View Project"}
         </Button>
-        </br>
+       <div style={{ margin: "5px" }}></div>
         {props.githubLink && (
           <Button variant="dark" href={props.githubLink} target="_blank" className="github-button">
             <FaGithub /> &nbsp; View Source
