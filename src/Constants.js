@@ -1,6 +1,7 @@
 import Bikebooking from "./Assets/Projects/Bikebooking.PNG";
 import Stackoverflow from "./Assets/Projects/Stackoverflow.PNG";
-import Razorpay from ".Assets/Projects/Razorpay.PNG;
+import Razorpay from "./Assets/Projects/Razorpay.PNG";
+
 
 export const PROJECTS = [
   {
