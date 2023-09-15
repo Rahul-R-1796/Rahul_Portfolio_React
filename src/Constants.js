@@ -1,11 +1,12 @@
 import Bikebooking from "./Assets/Projects/Bikebooking.PNG";
 import Stackoverflow from "./Assets/Projects/Stackoverflow.PNG";
+import Razorpay from ".Assets/Projects/Razorpay.PNG;
 
 export const PROJECTS = [
   {
     image: Bikebooking,
     name: "Bike Service Booking System",
-    technologyUsed: "MERN (MongoDB, Express.js, React, Node.js), JavaScript",
+    technologyUsed: "MERN (MongoDB, Express.js, React, Node.js)",
     description: "Designed and developed a MERN-based Bike Service Booking App, offering users the convenience of reserving service slots in advance. The app features three daily booking slots, while an exclusive admin panel enables administrators to access and manage booking details, including the ability to cancel reservations, ensuring efficient service operations..",
     url: "https://bike-service-app.vercel.app/",
     githubLink:"https://github.com/Rahul-R-1796/Bike_Service_App/"
@@ -19,7 +20,14 @@ export const PROJECTS = [
     url: "https://stackverflow-clone.vercel.app/",
     githubLink:"https://github.com/Rahul-R-1796/Stackverflow_Clone"
   },
-
+      {
+    image: Razorpay,
+    name: "Stack Overflow Clone Website",
+    technologyUsed: "MERN (MongoDB, Express.js, React, Node.js)",
+    description: "The MERN Razorpay app is a full-stack web application built using the MERN (MongoDB, Express.js, React, Node.js) stack and integrated with Razorpay for seamless online payment processing.",
+    url: "https://razorpay-mern.vercel.app/",
+    githubLink:"https://github.com/Rahul-R-1796/Razorpay-MERN.git"
+  },
 ];
 
 export const SKILLS = [
