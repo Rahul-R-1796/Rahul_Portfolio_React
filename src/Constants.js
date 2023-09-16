@@ -1,6 +1,7 @@
 import Bikebooking from "./Assets/Projects/Bikebooking.PNG";
 import Stackoverflow from "./Assets/Projects/Stackoverflow.PNG";
 import Razorpay from "./Assets/Projects/Razorpay.PNG";
+import todo from "./Assets/Projects/TODO.PNG";
 
 
 export const PROJECTS = [
@@ -28,6 +29,14 @@ export const PROJECTS = [
     description: "The MERN Razorpay app is a full-stack web application built using the MERN (MongoDB, Express.js, React, Node.js) stack and integrated with Razorpay for seamless online payment processing.",
     url: "https://razorpay-mern.vercel.app/",
     githubLink:"https://github.com/Rahul-R-1796/Razorpay-MERN/"
+  },
+        {
+    image: todo ,
+    name: "Simple To-Do APP Website",
+    technologyUsed: "MERN (MongoDB, Express.js, React, Node.js)",
+    description: "The MERN Razorpay app is a full-stack To-Do web application built using the MERN (MongoDB, Express.js, React, Node.js) stack.",
+    url: "https://mern-todo-beta-ashen.vercel.app/",
+    githubLink:"https://github.com/Rahul-R-1796/MERN_TODO"
   },
 ];
 
