@@ -30,11 +30,30 @@ export const PROJECTS = [
     url: "https://razorpay-mern.vercel.app/",
     githubLink:"https://github.com/Rahul-R-1796/Razorpay-MERN/"
   },
+
+          {
+    image: Notes_taking_app ,
+    name: "Personal Notes-Taking App",
+    technologyUsed: "MERN (MongoDB, Express.js, React, Node.js)",
+    description: "Experience ultimate privacy and personalization with our MERN-based Notes-taking app, a full-stack web application where signed-in users can securely create and access their confidential notes, ensuring exclusive access to their stack",
+    url: "https://notes-taking-app-fe.vercel.app/login",
+    githubLink:"https://github.com/Rahul-R-1796/"
+  },
+
+            {
+    image: App Store,
+    name: "The Personal on the App Store",
+    technologyUsed: "MERN (MongoDB, Express.js, React, Node.js)",
+    description: "Welcome to our MERN-based application, where you have the freedom to create your personalized collection of favorite apps. With our platform, you can consolidate all your desired applications onto one page for convenient access.",
+    url: "https://obezee-app.vercel.app/",
+    githubLink:"https://github.com/Rahul-R-1796/"
+  },
+  
         {
     image: todo ,
     name: "Simple To-Do APP Website",
     technologyUsed: "MERN (MongoDB, Express.js, React, Node.js)",
-    description: "The MERN Razorpay app is a full-stack To-Do web application built using the MERN (MongoDB, Express.js, React, Node.js) stack.",
+    description: "The MERN notes CRUD app is a full-stack To-Do web application built using the MERN (MongoDB, Express.js, React, Node.js) stack.",
     url: "https://mern-todo-beta-ashen.vercel.app/",
     githubLink:"https://github.com/Rahul-R-1796/MERN_TODO"
   },
