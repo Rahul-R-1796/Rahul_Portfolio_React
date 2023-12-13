@@ -2,6 +2,8 @@ import Bikebooking from "./Assets/Projects/Bikebooking.PNG";
 import Stackoverflow from "./Assets/Projects/Stackoverflow.PNG";
 import Razorpay from "./Assets/Projects/Razorpay.PNG";
 import todo from "./Assets/Projects/TODO.PNG";
+import Appstore from "./Assets/Projects/App Store.PNG";
+import Notes_taking_app from "./Assets/Projects/Notes_taking_app.PNG";
 
 
 export const PROJECTS = [
@@ -32,7 +34,7 @@ export const PROJECTS = [
   },
 
           {
-    image: Notes_taking_app ,
+    image: Notes_taking_app,
     name: "Personal Notes-Taking App",
     technologyUsed: "MERN (MongoDB, Express.js, React, Node.js)",
     description: "Experience ultimate privacy and personalization with our MERN-based Notes-taking app, a full-stack web application where signed-in users can securely create and access their confidential notes, ensuring exclusive access to their stack",
@@ -41,7 +43,7 @@ export const PROJECTS = [
   },
 
             {
-    image: App Store,
+    image: Appstore,
     name: "The Personal on the App Store",
     technologyUsed: "MERN (MongoDB, Express.js, React, Node.js)",
     description: "Welcome to our MERN-based application, where you have the freedom to create your personalized collection of favorite apps. With our platform, you can consolidate all your desired applications onto one page for convenient access.",
