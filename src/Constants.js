@@ -16,14 +16,14 @@ export const PROJECTS = [
     githubLink:"https://github.com/Rahul-R-1796/Bike_Service_App/"
   },
 
-    {
-    image: Stackoverflow,
-    name: "Stack Overflow Clone Website",
-    technologyUsed: "MERN (MongoDB, Express.js, React, Node.js)",
-    description: "This MERN Stack Overflow clone, featuring user authentication, Q&A functionality, robust search capabilities, and a voting system. Users can add friends, and manage friend requests. The platform fosters a vibrant programming community, with a dedicated notifications page for friend requests and question interactions.",
-    url: "https://stackverflow-clone.vercel.app/",
-    githubLink:"https://github.com/Rahul-R-1796/Stackverflow_Clone"
-  },
+  //   {
+  //   image: Stackoverflow,
+  //   name: "Stack Overflow Clone Website",
+  //   technologyUsed: "MERN (MongoDB, Express.js, React, Node.js)",
+  //   description: "This MERN Stack Overflow clone, featuring user authentication, Q&A functionality, robust search capabilities, and a voting system. Users can add friends, and manage friend requests. The platform fosters a vibrant programming community, with a dedicated notifications page for friend requests and question interactions.",
+  //   url: "https://stackverflow-clone.vercel.app/",
+  //   githubLink:"https://github.com/Rahul-R-1796/Stackverflow_Clone"
+  // },
       {
     image: Razorpay,
     name: "Razorpay E-Commerce Website",
