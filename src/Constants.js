@@ -4,9 +4,18 @@ import Razorpay from "./Assets/Projects/Razorpay.PNG";
 import todo from "./Assets/Projects/TODO.PNG";
 import Appstore from "./Assets/Projects/App Store.PNG";
 import Notes_taking_app from "./Assets/Projects/Notes_taking_app.PNG";
+import Password from "./Assets/Projects/Password_Capture.PNG"
 
 
 export const PROJECTS = [
+   {
+    image:  Password,
+    name: "Authentication Authorization",
+    technologyUsed: "MERN (MongoDB, Express.js, React, Node.js)",
+    description: "Crafted and implemented a robust MERN-based Authentication and Authorization system, providing users with seamless Sign-In functionality. Additionally, incorporated a password reset feature utilizing Nodemailer for enhanced user security and convenience.",
+    url: "https://password-reset-task.vercel.app/",
+    githubLink:"https://github.com/Rahul-R-1796/Rahul_Portfolio_React"
+  },
   {
     image: Bikebooking,
     name: "Bike Service Booking System",
