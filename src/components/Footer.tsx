@@ -19,7 +19,7 @@ const Footer = () => {
     {
       icon: GithubIcon,
       label: 'GitHub',
-      href: 'https://github.com',
+      href: 'https://github.com/Rahul-R-1796/',
       color: '#ffffff',
     },
     {
@@ -140,7 +140,7 @@ const Footer = () => {
                 fontWeight: 900,
                 fontSize: '0.75rem',
                 letterSpacing: '0.15em',
-                textTransform: 'uppercase',
+                textTransform: 'lowercase',
                 fontFamily: 'var(--font-display)',
                 transition: 'all 0.3s ease',
                 textDecoration: 'none',

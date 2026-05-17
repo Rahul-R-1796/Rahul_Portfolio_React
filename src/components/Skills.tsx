@@ -37,6 +37,7 @@ const techStack: Array<{ name: string; logo?: string; icon?: any; invertDark?: b
   { name: "Azure", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" },
   { name: "MySQL", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" },
   { name: "MongoDB", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" },
+  { name: "Arduino", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/arduino/arduino-original.svg" },
   { name: "Git", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" },
   { name: "GitHub", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg", invertDark: true },
   { name: "VS Code", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" },
@@ -90,7 +91,7 @@ const skillCategories = [
     title: "Engineering Tools",
     icon: Layers,
     description: "Utilizing modern tools for version control, testing, and streamlined software development lifecycles.",
-    skills: ["Git", "GitHub", "VS Code", "Postman", "Bash", "Jira", "Confluence"]
+    skills: ["Arduino", "Git", "GitHub", "VS Code", "Postman", "Bash", "Jira", "Confluence"]
   }
 ];
 

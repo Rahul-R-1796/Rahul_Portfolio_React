@@ -48,7 +48,7 @@ const Hero = () => {
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-12">
               {[
                 { icon: LinkedinIcon, href: "https://www.linkedin.com/in/rahul-rajenderan-972174284/", label: "LinkedIn" },
-                { icon: GithubIcon, href: "https://github.com", label: "GitHub" },
+                { icon: GithubIcon, href: "https://github.com/Rahul-R-1796/", label: "GitHub" },
                 { icon: WhatsappIcon, href: "https://wa.me/918610955329", label: "WhatsApp" },
                 { icon: Mail, href: "mailto:rahulrajenderan96@gmail.com", label: "Email" }
               ].map((social, index) => (
@@ -110,19 +110,19 @@ const Hero = () => {
                  <motion.div 
                    animate={{ y: [0, -10, 0] }} 
                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                   className="absolute top-8 right-4 glass px-5 py-4 rounded-[1.5rem] border border-white/10 shadow-2xl hidden md:block"
+                   className="absolute top-4 -right-2 md:top-8 md:right-4 glass px-4 md:px-5 py-3 md:py-4 rounded-2xl md:rounded-[1.5rem] border border-white/10 shadow-2xl z-20"
                  >
-                   <div className="text-primary font-black text-xl leading-none font-display">AI</div>
-                   <div className="text-[9px] font-black uppercase tracking-[0.3em] text-text-muted mt-2">Specialist</div>
+                   <div className="text-primary font-black text-lg md:text-xl leading-none font-display">AI</div>
+                   <div className="text-[8px] md:text-[9px] font-black uppercase tracking-[0.3em] text-text-muted mt-2">Specialist</div>
                  </motion.div>
 
                  <motion.div 
                    animate={{ y: [0, 10, 0] }} 
                    transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                   className="absolute bottom-8 left-4 glass px-5 py-4 rounded-[1.5rem] border border-white/10 shadow-2xl hidden md:block"
+                   className="absolute bottom-4 -left-2 md:bottom-8 md:left-4 glass px-4 md:px-5 py-3 md:py-4 rounded-2xl md:rounded-[1.5rem] border border-white/10 shadow-2xl z-20"
                  >
-                   <div className="text-secondary font-black text-xl leading-none font-display">Fullstack</div>
-                   <div className="text-[9px] font-black uppercase tracking-[0.3em] text-text-muted mt-2">Developer</div>
+                   <div className="text-secondary font-black text-lg md:text-xl leading-none font-display">Fullstack</div>
+                   <div className="text-[8px] md:text-[9px] font-black uppercase tracking-[0.3em] text-text-muted mt-2">Developer</div>
                  </motion.div>
                </div>
             </div>
