@@ -7,7 +7,11 @@ import { GithubIcon, LinkedinIcon, WhatsappIcon, DownloadIcon } from './Icons';
 
 const Hero = () => {
   return (
-    <section id="about" className="relative pt-28 md:pt-44 pb-20 md:pb-32 overflow-hidden scroll-mt-28 min-h-screen flex items-center">
+    <section 
+      id="about" 
+      className="relative pb-20 md:pb-32 overflow-hidden scroll-mt-28 md:min-h-screen md:flex md:items-center"
+      style={{ paddingTop: 'clamp(9rem, 20vh, 12rem)' }}
+    >
       {/* Background Decorative Elements */}
       <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] animate-pulse" />
       <div className="absolute bottom-1/4 -right-20 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-[120px] animate-pulse [animation-delay:2s]" />

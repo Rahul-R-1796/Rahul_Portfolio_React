@@ -9,11 +9,20 @@ import {
   Code,
   Cloud,
   Layers,
-  Sparkles
+  Sparkles,
+  Link as LinkIcon,
+  Network,
+  Bot,
+  FileSearch,
+  Brain,
+  Sliders,
+  Wind,
+  UserCheck,
+  Activity
 } from 'lucide-react';
 import Link from 'next/link';
 
-const techStack = [
+const techStack: Array<{ name: string; logo?: string; icon?: any; invertDark?: boolean }> = [
   { name: "Python", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" },
   { name: "JavaScript", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" },
   { name: "C#", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" },
@@ -31,7 +40,19 @@ const techStack = [
   { name: "Git", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" },
   { name: "GitHub", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg", invertDark: true },
   { name: "VS Code", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" },
-  { name: "Postman", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg" }
+  { name: "Postman", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg" },
+  { name: "LangChain", icon: LinkIcon },
+  { name: "LangGraph", icon: Network },
+  { name: "Agno Agents", icon: Bot },
+  { name: "RAG", icon: Database },
+  { name: "Vectorless RAG", icon: FileSearch },
+  { name: "DeepAgents", icon: Brain },
+  { name: "OpenAI GPT", icon: Sparkles },
+  { name: "Prompt Eng", icon: Terminal },
+  { name: "Fine-tuning", icon: Sliders },
+  { name: "Mistral AI", icon: Wind },
+  { name: "HITL", icon: UserCheck },
+  { name: "Response Stream", icon: Activity }
 ];
 
 const skillCategories = [
@@ -39,7 +60,7 @@ const skillCategories = [
     title: "AI/ML & GenAI",
     icon: BrainCircuit,
     description: "Designing and deploying autonomous agentic systems, RAG pipelines, and multi-agent architectures using state-of-the-art LLMs.",
-    skills: ["LangChain", "LangGraph", "AGNO Agents", "DeepAgents", "OpenAI GPT Models", "Prompt Engineering", "Fine-tuning", "RAG Pipelines", "Mistral AI", "HITL (Human-in-the-Loop)", "Response Streaming"]
+    skills: ["LangChain", "LangGraph", "AGNO Agents", "RAG", "Vectorless RAG", "DeepAgents", "OpenAI GPT Models", "Prompt Engineering", "Fine-tuning", "Mistral AI", "HITL", "Response Streaming"]
   },
   {
     title: "Core Programming",
@@ -124,12 +145,16 @@ const Skills = () => {
                 whileHover={{ y: -8, scale: 1.1 }}
                 className="premium-card p-5 md:p-7 flex flex-col items-center gap-4 group cursor-pointer border-white/[0.03] hover:border-primary/30"
               >
-                <div className="relative w-10 h-10 md:w-12 md:h-12 transition-all duration-700 opacity-60 grayscale group-hover:grayscale-0 group-hover:opacity-100">
-                  <img 
-                    src={tech.logo} 
-                    alt={tech.name} 
-                    className={`w-full h-full object-contain ${tech.invertDark ? 'brightness-0 invert' : ''}`}
-                  />
+                <div className="relative w-10 h-10 md:w-12 md:h-12 transition-all duration-700 opacity-60 grayscale group-hover:grayscale-0 group-hover:opacity-100 flex items-center justify-center">
+                  {tech.logo ? (
+                    <img 
+                      src={tech.logo} 
+                      alt={tech.name} 
+                      className={`w-full h-full object-contain ${tech.invertDark ? 'brightness-0 invert' : ''}`}
+                    />
+                  ) : tech.icon ? (
+                    <tech.icon className="w-8 h-8 md:w-10 md:h-10 text-white" strokeWidth={1.5} />
+                  ) : null}
                 </div>
                 <span className="text-[9px] font-black uppercase tracking-[0.2em] text-text-muted group-hover:text-white transition-colors text-center">
                   {tech.name}

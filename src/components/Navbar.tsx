@@ -55,9 +55,9 @@ const Navbar = () => {
           </div>
         </Link>
 
-        {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-12">
-          <div className="flex items-center gap-8">
+        {/* Desktop Links - Hidden on smaller screens up to lg (1024px) to prevent squishing */}
+        <div className="hidden lg:flex items-center gap-8 xl:gap-12">
+          <div className="flex items-center gap-6 xl:gap-8">
             {navLinks.map((link) => (
               <Link 
                 key={link.name} 
@@ -79,35 +79,36 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Mobile Toggle */}
+        {/* Mobile/Tablet Toggle */}
         <button 
-          className="md:hidden w-12 h-12 flex items-center justify-center text-foreground glass rounded-2xl border border-white/10 active:scale-90 transition-transform"
+          className="lg:hidden w-12 h-12 flex items-center justify-center text-foreground glass rounded-2xl border border-white/10 active:scale-90 transition-transform"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile/Tablet Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="absolute top-full left-0 right-0 glass border-b border-white/10 overflow-hidden shadow-2xl md:hidden"
+            className="absolute top-full left-0 right-0 bg-[#030304]/98 backdrop-blur-3xl border-b border-white/10 overflow-hidden shadow-2xl lg:hidden"
           >
-            <div className="flex flex-col gap-6 p-10">
+            <div className="flex flex-col gap-6 p-8">
               {navLinks.map((link, i) => (
                 <motion.div
                   key={link.name}
                   initial={{ x: -20, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: i * 0.1 }}
+                  className="flex justify-center"
                 >
                   <Link 
                     href={link.href}
-                    className="text-2xl font-black uppercase tracking-[0.2em] hover:text-primary transition-colors font-display"
+                    className="text-[13px] font-bold uppercase tracking-[0.25em] text-text-muted hover:text-primary transition-colors font-display"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.name}
@@ -118,13 +119,13 @@ const Navbar = () => {
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.5 }}
-                className="pt-6 border-t border-white/5"
+                className="pt-6 mt-2 border-t border-white/5 flex justify-center"
               >
                 <a 
                   href="/Rahul_R_AI_Engineer.pdf" 
                   download="Rahul_R_AI_Engineer.pdf"
                   rel="noopener noreferrer"
-                  className="btn-primary w-full h-16 rounded-2xl"
+                  className="btn-primary h-14 px-8 rounded-xl w-full max-w-[280px]"
                   onClick={() => setIsOpen(false)}
                 >
                   Download Resume
